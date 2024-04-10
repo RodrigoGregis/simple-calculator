@@ -2,15 +2,57 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora Simples</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
+
+    <!-- Título da página -->
+    <h1>
+        Calculadora Simples
+    </h1>
+
+    <form action="">
+        <!-- Campo para colocar o valor 1 -->
+        <label>
+            <div>Digite o primeiro valor</div>
+            <input id="inputForm1" name="inputForm1" type="text" />
+        </label>
+
+        <!-- Campo de seleção da operação matemática(+ - / *) -->
+        <label>
+            <div>Escolha a operação</div>
+            <select id="selectOperator" name="selectOperator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">&div;</option>
+                <option value="*">x</option>
+            </select>
+        </label>
+
+        <!-- Campo para colocar o valor 2 -->
+        <label>
+            <div>Digite o segundo valor</div>
+            <input id="inputForm2" name="inputForm2" type="text" />
+        </label>
+
+        <!-- Botão para executar o cálculo -->
+        <div>
+            <button type="submit">
+                Calcular
+            </button>
+        </div>
+    </form>
+
+    <!-- Exibição do resultado -->
+    <div>
+        Resultado:
+    </div>
 
     <!-- Scripts -->
     <script src="/scripts/main.js"></script>
