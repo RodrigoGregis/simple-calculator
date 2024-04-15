@@ -38,13 +38,9 @@ function calculate() {
 // Pegar o botão e adicionar evento de click.
 const elementButton = document.getElementById('buttonSubmit');
 
-elementButton.addEventListener('click', function (event) {
-    event.preventDefault();
-
+elementButton.addEventListener('click', function () {
     // Validar se os campos field1 e field2 NÃO estão vazios.
     if (field1.value !== '' && field2.value !== '') {
         calculate();
     }
 })
-
-
