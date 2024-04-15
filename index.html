@@ -2,15 +2,66 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora Simples</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body>
+<body class="content">
+
+    <div class="content-calculator">
+
+        <header class="header">
+            <!-- Título da página -->
+            <h1 class="title-page">
+                Calculadora Simples
+            </h1>
+
+            <a class="github" href="https://github.com/RodrigoGregis/simple-calculator" target="_blank"
+                title="Veja o repositório deste projeto no GitHub.">
+                <img src="./image/github-icon.png" alt="GitHub">
+            </a>
+        </header>
+
+        <!-- Exibição do resultado (Display) -->
+        <div id="display" class="display"></div>
+
+        <form class="calculator">
+            <!-- Campo para colocar o valor 1 -->
+            <label class="field">
+                <div class="description-field">Digite o primeiro valor</div>
+                <input id="inputForm1" class="input-style" name="input-form-1" type="number" />
+            </label>
+
+            <!-- Campo de seleção da operação matemática(+ - / *) -->
+            <label class="field">
+                <div class="description-field">Escolha a operação</div>
+                <select id="selectOperator" class="input-style adjust-arrow-spacing" name="select-operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/">&div;</option>
+                    <option value="*">x</option>
+                </select>
+            </label>
+
+            <!-- Campo para colocar o valor 2 -->
+            <label class="field">
+                <div class="description-field">Digite o segundo valor</div>
+                <input id="inputForm2" class="input-style" name="input-form-2" type="number" />
+            </label>
+
+            <!-- Botão para executar o cálculo -->
+
+            <button class="button-calculate" id="buttonSubmit" type="submit">
+                Calcular
+            </button>
+
+        </form>
+
+    </div>
 
     <!-- Scripts -->
     <script src="/scripts/main.js"></script>
